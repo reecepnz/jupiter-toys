@@ -1,0 +1,24 @@
+{
+  "name": "jupiter-toys",
+  "version": "1.0.0",
+  "scripts": {
+    "lint:fix": "npx eslint . --fix",
+    "test:regression": "wdio run profiles/wdio.conf.js --suite regression",
+    "test:verify-cart": "wdio run profiles/wdio.conf.js --spec test/specs/verify.cart.test.js",
+    "test:verify-contact": "wdio run profiles/wdio.conf.js --spec test/specs/verify.contact.test.js"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@wdio/cli": "^9.7.2",
+    "@wdio/junit-reporter": "^9.6.3",
+    "@wdio/local-runner": "^9.7.2",
+    "@wdio/mocha-framework": "^9.7.2",
+    "@wdio/spec-reporter": "^9.6.3",
+    "chai": "^5.1.2",
+    "chromedriver": "^132.0.2",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "type": "module"
+}

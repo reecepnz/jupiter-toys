@@ -1,0 +1,22 @@
+variables:
+    SUITE:
+        description: "Suite"
+        value: "regression"
+        options:
+            - "regression"
+
+stages:
+    - test
+
+regression:
+    stage: test
+    rules:
+        - if: $SUITE == "regression"
+    script:
+        - npm run test:regression
+    artifacts:
+        when: always
+        paths:
+            - output/
+        reports:
+            junit: output/results/*.xml
