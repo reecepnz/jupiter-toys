@@ -22,8 +22,7 @@ export const config = {
                 "--window-size=1920,1080"
             ],
             excludeSwitches: ["enable-logging"]
-        },
-        "wdio:enforceWebDriverClassic": true
+        }
     }],
     logLevel: "info",
     outputDir: "output/logs/wdio",

@@ -15,7 +15,7 @@
     "@wdio/mocha-framework": "^9.7.2",
     "@wdio/spec-reporter": "^9.6.3",
     "chai": "^5.1.2",
-    "chromedriver": "^132.0.2",
+    "chromedriver": "^140.0.3",
     "eslint": "^9.19.0",
     "globals": "^15.14.0",
     "wdio-chromedriver-service": "^8.1.1"
